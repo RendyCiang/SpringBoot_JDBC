@@ -1,0 +1,55 @@
+package com.clone.qteenz.qteenz_web_service.dto.menu;
+
+import com.clone.qteenz.qteenz_web_service.model.Category;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+public class MenuResponseDTO {
+    private long id;
+    private String name;
+    private String description;
+    private BigDecimal price;
+
+    public MenuResponseDTO(long id, String name, String description, BigDecimal price) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
+    public MenuResponseDTO() {
+    }
+
+    public long getId(){
+        return id;
+    }
+
+    public void setId(long id){
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+}
